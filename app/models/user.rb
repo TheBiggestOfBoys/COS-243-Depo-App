@@ -11,5 +11,5 @@ class User < ApplicationRecord
       if User.count.zero?
         raise Error.new "Can't delete last user"
       end
-    end   
+    end
 end

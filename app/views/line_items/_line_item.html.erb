@@ -1,3 +1,6 @@
+<% if line_item == @current_item %>
+<tr class="line-item-highlight">
+<% else %>
 <tr>
   <td class="text-right"><%= line_item.quantity%></td>
   <td>&times;</td>

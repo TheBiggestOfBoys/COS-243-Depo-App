@@ -1,3 +1,12 @@
+#---
+# Excerpted from "Agile Web Development with Rails 7",
+# published by The Pragmatic Bookshelf.
+# Copyrights apply to this code. It may not be used to create training material,
+# courses, books, articles, and the like. Contact us if you are in doubt.
+# We make no guarantees that this code is fit for any purpose.
+# Visit https://pragprog.com/titles/rails7 for more book information.
+#---
+# frozen_string_literal: true
 require "test_helper"
 
 class SupportMailboxTest < ActionMailbox::TestCase
@@ -16,7 +25,9 @@ class SupportMailboxTest < ActionMailbox::TestCase
     assert_nil support_request.order
   end
 
+
   # previous test
+
   test "we create a SupportRequest with the most recent order" do
     recent_order  = orders(:one)
     older_order   = orders(:another_one)
